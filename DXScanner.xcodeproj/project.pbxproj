@@ -10,6 +10,7 @@
 		3406CA512526A074004EE73B /* DXScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3406CA472526A074004EE73B /* DXScanner.framework */; };
 		3406CA562526A074004EE73B /* DXScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406CA552526A074004EE73B /* DXScannerTests.swift */; };
 		3406CA582526A074004EE73B /* DXScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 3406CA4A2526A074004EE73B /* DXScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3406CA622526AEA1004EE73B /* DXScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406CA612526AEA1004EE73B /* DXScanner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		3406CA502526A074004EE73B /* DXScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DXScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3406CA552526A074004EE73B /* DXScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DXScannerTests.swift; sourceTree = "<group>"; };
 		3406CA572526A074004EE73B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3406CA612526AEA1004EE73B /* DXScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DXScanner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				3406CA4A2526A074004EE73B /* DXScanner.h */,
 				3406CA4B2526A074004EE73B /* Info.plist */,
+				3406CA612526AEA1004EE73B /* DXScanner.swift */,
 			);
 			path = DXScanner;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					3406CA462526A073004EE73B = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 					3406CA4F2526A074004EE73B = {
 						CreatedOnToolsVersion = 12.0;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3406CA622526AEA1004EE73B /* DXScanner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		3406CA5C2526A074004EE73B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4EK8A9V52S;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dexter.DXScanner;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		3406CA5D2526A074004EE73B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4EK8A9V52S;
@@ -389,6 +397,7 @@
 		3406CA5F2526A074004EE73B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4EK8A9V52S;
 				INFOPLIST_FILE = DXScannerTests/Info.plist;
@@ -407,6 +416,7 @@
 		3406CA602526A074004EE73B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4EK8A9V52S;
 				INFOPLIST_FILE = DXScannerTests/Info.plist;
