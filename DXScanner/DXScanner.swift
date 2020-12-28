@@ -10,14 +10,17 @@ import AVFoundation
 
 public class DXScanner{
     
-    public func scan(){
+    
+    public func startScan(){
         //open camera for scanning
         print("Sacanning Called")
         isAuthorised { (status) in
             //startScan
             print("status: \(status)")
         }
-        
+    }
+    
+    public func stopScan(){
         
     }
     
