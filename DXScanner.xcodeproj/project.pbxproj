@@ -10,12 +10,7 @@
 		3406CA512526A074004EE73B /* DXScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3406CA472526A074004EE73B /* DXScanner.framework */; };
 		3406CA562526A074004EE73B /* DXScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406CA552526A074004EE73B /* DXScannerTests.swift */; };
 		3406CA582526A074004EE73B /* DXScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 3406CA4A2526A074004EE73B /* DXScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3406CA622526AEA1004EE73B /* DXScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406CA612526AEA1004EE73B /* DXScanner.swift */; };
 		3406CAB4252FDF20004EE73B /* DXScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406CAB3252FDF20004EE73B /* DXScannerView.swift */; };
-		3406CAB6252FDF69004EE73B /* DXScannerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406CAB5252FDF69004EE73B /* DXScannerDelegate.swift */; };
-		3406CAB8252FE038004EE73B /* DXScanningError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406CAB7252FE038004EE73B /* DXScanningError.swift */; };
-		34F46275259A471400A9E384 /* DXScannerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F46274259A471400A9E384 /* DXScannerManager.swift */; };
-		34F46277259A484600A9E384 /* DXScannerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F46276259A484600A9E384 /* DXScannerConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +30,7 @@
 		3406CA502526A074004EE73B /* DXScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DXScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3406CA552526A074004EE73B /* DXScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DXScannerTests.swift; sourceTree = "<group>"; };
 		3406CA572526A074004EE73B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3406CA612526AEA1004EE73B /* DXScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DXScanner.swift; sourceTree = "<group>"; };
 		3406CAB3252FDF20004EE73B /* DXScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DXScannerView.swift; sourceTree = "<group>"; };
-		3406CAB5252FDF69004EE73B /* DXScannerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DXScannerDelegate.swift; sourceTree = "<group>"; };
-		3406CAB7252FE038004EE73B /* DXScanningError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DXScanningError.swift; sourceTree = "<group>"; };
-		34F46274259A471400A9E384 /* DXScannerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DXScannerManager.swift; sourceTree = "<group>"; };
-		34F46276259A484600A9E384 /* DXScannerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DXScannerConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +75,7 @@
 			children = (
 				3406CA4A2526A074004EE73B /* DXScanner.h */,
 				3406CA4B2526A074004EE73B /* Info.plist */,
-				3406CA612526AEA1004EE73B /* DXScanner.swift */,
 				3406CAB3252FDF20004EE73B /* DXScannerView.swift */,
-				3406CAB5252FDF69004EE73B /* DXScannerDelegate.swift */,
-				3406CAB7252FE038004EE73B /* DXScanningError.swift */,
-				34F46274259A471400A9E384 /* DXScannerManager.swift */,
-				34F46276259A484600A9E384 /* DXScannerConfiguration.swift */,
 			);
 			path = DXScanner;
 			sourceTree = "<group>";
@@ -213,12 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3406CA622526AEA1004EE73B /* DXScanner.swift in Sources */,
-				34F46277259A484600A9E384 /* DXScannerConfiguration.swift in Sources */,
 				3406CAB4252FDF20004EE73B /* DXScannerView.swift in Sources */,
-				34F46275259A471400A9E384 /* DXScannerManager.swift in Sources */,
-				3406CAB6252FDF69004EE73B /* DXScannerDelegate.swift in Sources */,
-				3406CAB8252FE038004EE73B /* DXScanningError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dexter.DXScanner;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -409,6 +390,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dexter.DXScanner;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
