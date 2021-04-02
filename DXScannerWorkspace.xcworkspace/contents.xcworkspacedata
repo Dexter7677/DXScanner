@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:DXscannerDemo/DXscannerDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "container:DXScanner.xcodeproj">
    </FileRef>
 </Workspace>
