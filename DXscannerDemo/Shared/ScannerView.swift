@@ -10,7 +10,8 @@ import SwiftUI
 import DXScanner
 
 struct ScannerView : UIViewRepresentable{
-    var rect = CGRect(x: 10, y: 10, width: 200 , height: 300)
+    
+    var rect = CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: 400, height: 400))
     func updateUIView(_ uiView: UIViewType, context: Context) {
         
     }
