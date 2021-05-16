@@ -9,18 +9,13 @@ import Foundation
 import SwiftUI
 import DXScanner
 
-struct ScannerView : UIViewRepresentable{
-    
+struct ScannerView: UIViewRepresentable {
+
     var rect = CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: 400, height: 400))
-    func updateUIView(_ uiView: UIViewType, context: Context) {
-        
-    }
-    
-    func startScan()
-    {
-        
-    }
-    
+    func updateUIView(_ uiView: UIViewType, context: Context) {}
+
+    func startScan() {}
+
     func makeUIView(context: Context) -> some UIView {
         return DXScannerView(frame: rect)
     }

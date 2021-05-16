@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0023A063264ED9E600E92CDC /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0023A062264ED9E600E92CDC /* PermissionManager.swift */; };
+		0023A067264EEB1400E92CDC /* SessionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0023A066264EEB1400E92CDC /* SessionHandler.swift */; };
+		0023A069264F019900E92CDC /* VisionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0023A068264F019900E92CDC /* VisionService.swift */; };
+		0023A0AC264FA13300E92CDC /* CaptureSessionConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0023A0AB264FA13300E92CDC /* CaptureSessionConfiguration.swift */; };
 		3406CA512526A074004EE73B /* DXScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3406CA472526A074004EE73B /* DXScanner.framework */; };
 		3406CA562526A074004EE73B /* DXScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406CA552526A074004EE73B /* DXScannerTests.swift */; };
 		3406CA582526A074004EE73B /* DXScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 3406CA4A2526A074004EE73B /* DXScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,6 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0023A062264ED9E600E92CDC /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
+		0023A066264EEB1400E92CDC /* SessionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionHandler.swift; sourceTree = "<group>"; };
+		0023A068264F019900E92CDC /* VisionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionService.swift; sourceTree = "<group>"; };
+		0023A0AB264FA13300E92CDC /* CaptureSessionConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureSessionConfiguration.swift; sourceTree = "<group>"; };
 		3406CA472526A074004EE73B /* DXScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DXScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3406CA4A2526A074004EE73B /* DXScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXScanner.h; sourceTree = "<group>"; };
 		3406CA4B2526A074004EE73B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +84,10 @@
 				3406CA4A2526A074004EE73B /* DXScanner.h */,
 				3406CA4B2526A074004EE73B /* Info.plist */,
 				3406CAB3252FDF20004EE73B /* DXScannerView.swift */,
+				0023A062264ED9E600E92CDC /* PermissionManager.swift */,
+				0023A066264EEB1400E92CDC /* SessionHandler.swift */,
+				0023A068264F019900E92CDC /* VisionService.swift */,
+				0023A0AB264FA13300E92CDC /* CaptureSessionConfiguration.swift */,
 			);
 			path = DXScanner;
 			sourceTree = "<group>";
@@ -111,6 +123,7 @@
 				3406CA432526A073004EE73B /* Sources */,
 				3406CA442526A073004EE73B /* Frameworks */,
 				3406CA452526A073004EE73B /* Resources */,
+				0023A065264EE06200E92CDC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -193,12 +206,36 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0023A065264EE06200E92CDC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3406CA432526A073004EE73B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0023A069264F019900E92CDC /* VisionService.swift in Sources */,
+				0023A063264ED9E600E92CDC /* PermissionManager.swift in Sources */,
+				0023A067264EEB1400E92CDC /* SessionHandler.swift in Sources */,
 				3406CAB4252FDF20004EE73B /* DXScannerView.swift in Sources */,
+				0023A0AC264FA13300E92CDC /* CaptureSessionConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
